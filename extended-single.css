@@ -19,6 +19,7 @@ nav#TableOfContents ul {
 }
 
 main {
+    flex-grow: 1;
     min-height: 100vh;
     margin-bottom: 150px;
 }
@@ -74,4 +75,27 @@ samp {
     padding: 0 2px;
     font-size: 15px;
     font-weight: bold;
+}
+
+table {
+    margin: 18px auto;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 2px 8px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+div.youtube {
+    margin: 18px auto;
+    text-align: center;
+}
+
+div.youtube > iframe {
+    width: 640px;
+    height: 360px;
 }
