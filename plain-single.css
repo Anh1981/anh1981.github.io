@@ -1,0 +1,16 @@
+body {
+    margin: 20px;
+    font-size: 18px;
+}
+
+rt {
+    margin-bottom: 2px;
+}
+
+a:visited {
+    color: LinkText;
+}
+
+code {
+    font-size: 16px;
+}

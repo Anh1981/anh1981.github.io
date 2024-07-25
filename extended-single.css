@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    display: flex;
+    font-size: 18px;
+}
+
+nav#TableOfContents {
+    flex-shrink: 0;
+    margin: 0;
+    width: 270px;
+    padding: 3px 15px;
+    border-color: #A0A0A0;
+    border-style: solid;
+    border-right: none;
+}
+
+nav#TableOfContents ul {
+    padding-left: 20px;
+}
+
+main {
+    min-height: 100vh;
+    margin-bottom: 150px;
+}
+
+button#TocButton {
+    border-left: none;
+}
+
+main {
+    padding: 0 20px;
+}
+
+h2, h3 {
+    margin: 13px 0;
+}
+
+a {
+    color: red;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption > p {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+q {
+    font-style: italic;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 0 15px;
+}
+
+rt {
+    margin-bottom: 2px;
+}
+
+code, kbd {
+    font-size: 16px;
+}
+
+samp {
+    padding: 0 2px;
+    font-size: 15px;
+    font-weight: bold;
+}
