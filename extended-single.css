@@ -39,6 +39,11 @@ a {
     color: red;
 }
 
+dfn[title] {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
 figure {
     text-align: center;
 }
