@@ -6,13 +6,20 @@
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jul 2024 21:42:02 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jul 2024 14:55:55 +0200</lastBuildDate>
     <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Final Fantasy</title>
+      <link>https://example.org/posts/media/final-fantasy/</link>
+      <pubDate>Fri, 26 Jul 2024 14:55:55 +0200</pubDate>
+      <guid>https://example.org/posts/media/final-fantasy/</guid>
+      <description>Coś czuję, że to będzie jeden z najdłuższych postów&amp;hellip;&#xA;Planuję dokładnie opisać jak przeszedłem kolejne gry. Jeżeli nigdy nie grałeś w Final Fantasy i nie boisz się spojlerów, to czytaj dalej. Jeżeli już grałeś w Final Fantasy, to mam nadzieję, że spodoba Ci się moje podejście do tych gier.&#xA;Nie będę opisywać fabuły gry.&#xA;Final Fantasy X Opening Wstęp (pierwszy boss) Pierwszą rzeczą jaką się dowiadujemy to to, że nie można pomijać cutscen!</description>
+    </item>
+    <item>
       <title>Zakup Playstation 3</title>
-      <link>https://example.org/posts/media/buying-playstation-3/</link>
+      <link>https://example.org/posts/tools/buying-playstation-3/</link>
       <pubDate>Thu, 25 Jul 2024 21:42:02 +0200</pubDate>
-      <guid>https://example.org/posts/media/buying-playstation-3/</guid>
+      <guid>https://example.org/posts/tools/buying-playstation-3/</guid>
       <description>Playstation 3 to konsola siódmej generacji. Dobrze znamy wojnę konsol:&#xA;Console Introduced Discontinued Units Sold Xbox 360 2005 2016 84,700,000 PlayStation 3 2006 2017 87,400,000 Wii 2005 2017 101,630,000 Konsole dotychczas Muszę przyznać, że jestem fanboy&amp;rsquo;em Sony. W sensie, to nie tak, że fanatycznie uprawiam kult Playstation. Po prostu, faktycznie, każda konsola jaką kiedykolwiek miałem jest firmy Sony.&#xA;PSP PSP to przenośna konsola, która wyszła w roku 2005 w Europie. Dostałem ją od rodziców, gdy miałem około 10 lat.</description>
     </item>
     <item>
