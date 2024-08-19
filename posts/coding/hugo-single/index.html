@@ -21,7 +21,6 @@
     <li><a href="#html">HTML</a>
       <ul>
         <li><a href="#struktura-dokumentu">Struktura dokumentu</a></li>
-        <li><a href="#ułożenie-pudełek">Ułożenie pudełek</a></li>
         <li><a href="#podstawowe-znaczniki">Podstawowe znaczniki</a></li>
         <li><a href="#formatowanie-tekstu">Formatowanie tekstu</a></li>
         <li><a href="#znaczniki-informujące-o-treści">Znaczniki informujące o treści</a></li>
@@ -30,6 +29,7 @@
     <li><a href="#css">CSS</a>
       <ul>
         <li><a href="#selektory">Selektory</a></li>
+        <li><a href="#ułożenie-pudełek">Ułożenie pudełek</a></li>
       </ul>
     </li>
     <li><a href="#javascript">JavaScript</a></li>
@@ -173,24 +173,6 @@ nich. Pozwoli to na dokładniejsze wyrażanie swoich myśli, a tekst będzie bog
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#000080;font-weight:bold">html</span>&gt;
 </span></span></code></pre></div><p>Wewnątrz znacznika <code>&lt;head&gt;</code> wpisujemy wszystkie znaczniki dotyczące opisu strony,
 np. pliki CSS i JS, tytuł strony, ikonka strony. Cała treść strony wpada do znacznika <code>&lt;body&gt;</code>.</p>
-<h3 id="ułożenie-pudełek">Ułożenie pudełek</h3>
-<p>Po przyjrzeniu się dokumentowi HTML, wiemy które pudełko jest wewnątrz którego pudełka.
-Nadal nie wiemy jak je rozstawić. Domyślnie pudełka mają dwa tryby: <dfn>inline</dfn>
-i <dfn>block</dfn>. Inline znaczy, że pudełko można ustawić obok siebie i po prostu
-przenieść na dół jak zabraknie miejsca poziomo. Block znaczy, że pudełko zawsze
-trzeba ustawić pod sobą.</p>
-<p>Na przykład znaczniki <code>&lt;p&gt;</code> są domyślnie typu block, każdy paragraf jest pod sobą.
-Z kolei znacznik <code>&lt;dfn&gt;</code> jest domyślnie inline i nie rusza tekstu wokół.</p>
-<p>Układ strony to układ pudełek. Prawdopodobnie dałoby się ustawić pudełko ze spisem
-treści i z treścią za pomocą standardowych typów położeń. Alternatywą jest po prostu użycie
-layoutu <dfn>flexbox</dfn> lub <dfn>grid</dfn>. Grid jest dokładniejszy,
-ale wymaga więcej pracy. Natomiast flexbox jest prosty.</p>
-<p>Flexbox ustawia wszystkie pudełka
-<dfn title="głębsze pudełka pozostają bez zmian
-" >bezpośrednio</dfn> wewnątrz w rząd. Wszystkie pudełka w flexbox mają wysokość
-najdłuższego pionowo pudełka. Pudełka wewnątrz są rozszerzane/skurczane w zależności od
-ilości treści w każdym z nich. Układ naszej strony to flexbox. Spis treści i przycisk
-będzie rozszerzał się w dół wraz z treścią.</p>
 <h3 id="podstawowe-znaczniki">Podstawowe znaczniki</h3>
 <ul>
 <li><code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code>, nagłówki rozdziałów. Do nagłówków można dołączyć atrybut <code>id</code>. W ten
@@ -253,6 +235,23 @@ Wybrać znacznik można po:</p>
 </ul>
 <p>CSS dla tej strony możesz obejrzeć
 <a href="/extended-single.css">tutaj</a>.</p>
+<h3 id="ułożenie-pudełek">Ułożenie pudełek</h3>
+<p>Po przyjrzeniu się dokumentowi HTML, wiemy które pudełko jest wewnątrz którego pudełka.
+Nadal nie wiemy jak je rozstawić. Domyślnie pudełka mają dwa tryby: <dfn>inline</dfn>
+i <dfn>block</dfn>. Inline znaczy, że pudełko można ustawić obok siebie i po prostu
+przenieść na dół jak zabraknie miejsca poziomo. Block znaczy, że pudełko zawsze
+trzeba ustawić pod sobą.</p>
+<p>Na przykład znaczniki <code>&lt;p&gt;</code> są domyślnie typu block, każdy paragraf jest pod sobą.
+Z kolei znacznik <code>&lt;dfn&gt;</code> jest domyślnie inline i nie rusza tekstu wokół.</p>
+<p>Układ strony to układ pudełek. Prawdopodobnie dałoby się ustawić pudełko ze spisem
+treści i z treścią za pomocą standardowych typów położeń. Alternatywą jest po prostu użycie
+layoutu <dfn>flexbox</dfn> lub <dfn>grid</dfn>. Grid jest dokładniejszy,
+ale wymaga więcej pracy. Natomiast flexbox jest prosty.</p>
+<p>Flexbox ustawia wszystkie pudełka
+<dfn title="głębsze pudełka pozostają bez zmian
+" >bezpośrednio</dfn> wewnątrz w rząd. Domyślnie, wszystkie pudełka w flexbox mają
+wysokość najdłuższego pionowo pudełka. Pudełka wewnątrz są rozszerzane/skurczane w zależności
+od ilości treści w każdym z nich. Układ naszej strony to flexbox.</p>
 <h2 id="javascript">JavaScript</h2>
 <p>Plik JavaScript ładujemy do strony HTML tak:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#000080;font-weight:bold">script</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;/extended-single.js&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">script</span>&gt;
@@ -279,7 +278,7 @@ paska wyszukiwania.</p>
 <h2 id="hugo">Hugo</h2>
 <p>Nareszcie przechodzimy do meritum posta, czyli narzędzia <cite>Hugo</cite>.</p>
 <figure><img src="/posts/coding/hugo-single/congratulations.gif"
-    alt="senko fox sleep" height="280px"><figcaption>
+    alt="senko fox sleep"><figcaption>
       <p>Myślałem, że będzie tylko o Hugo. Skończyło się na tym,
 że musiałem opisać cały ten cholerny HTML/CSS/JS&hellip;</p>
     </figcaption>
@@ -416,7 +415,7 @@ Mam nadzieję, że jakkolwiek udało mi się przyciągnąć Twoją uwagę. Star
 się dokładnie opisać każdy rozdział. Będę szczęśliwy, jeżeli przekaz był
 jasny.</p>
 <figure><img src="/posts/coding/hugo-single/bow.gif"
-    alt="yotsugi bow" width="350px">
+    alt="yotsugi bow">
 </figure>
 
 <p>Na koniec chciałbym podziękować za przeczytanie tego posta. Jeżeli napiszesz

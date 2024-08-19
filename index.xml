@@ -13,7 +13,7 @@
       <link>https://example.org/posts/media/final-fantasy/</link>
       <pubDate>Fri, 26 Jul 2024 14:55:55 +0200</pubDate>
       <guid>https://example.org/posts/media/final-fantasy/</guid>
-      <description>Coś czuję, że to będzie jeden z najdłuższych postów&amp;hellip;&#xA;Planuję dokładnie opisać jak przeszedłem kolejne gry. Jeżeli nigdy nie grałeś w Final Fantasy i nie boisz się spojlerów, to czytaj dalej. Jeżeli już grałeś w Final Fantasy, to mam nadzieję, że spodoba Ci się moje podejście do tych gier.&#xA;Nie będę opisywać fabuły gry.&#xA;Final Fantasy X Opening Wstęp (pierwszy boss) Pierwszą rzeczą jaką się dowiadujemy to to, że nie można pomijać cutscen!</description>
+      <description>Coś czuję, że to będzie jeden z najdłuższych postów&amp;hellip;&#xA;Dla mnie seria Final Fantasy to był falstart. Moim pierwszym Final Fantasy było FFXV. Grę udało mi się, po kilku próbach powrotu do gry, ukończyć i nie zostawiło u mnie dobrego wrażenia. Pewnego dnia znajomy z erasmusa z Włoch powiedział mi, że jest to jedna z jego ulubionych franczyz i polecił mi spróbować jeszcze raz, po prostu od innej gry. FFVII Remake jest jedną z udanych nowszych gier Final Fantasy, więc zdecydowałem, że będzie to kolejne Final Fantasy jakie zagram (tyle, że oryginał).</description>
     </item>
     <item>
       <title>Zakup Playstation 3</title>
@@ -28,13 +28,6 @@
       <pubDate>Wed, 24 Jul 2024 12:07:14 +0200</pubDate>
       <guid>https://example.org/posts/coding/hugo-single/</guid>
       <description>Jest rok 2024. Pisanie własnych stron internetowych jest czymś z czasów zamierzchłych. Przeważająca większość internautów korzysta z platform jak Facebook, Twitter i Youtube.&#xA;Moja opinia w uproszczeniu wygląda tak:&#xA;Korzystanie z mediów społecznościowych jest jak Windows.&#xA;Wyżej wymienione aplikacje internetowe są stworzone nie tylko w naszym interesie, ale raczej twórców. Muszą na czymś zarabiać. Zamiast korzystać z obcych platform, można samodzielnie napisać własną stronę. Nieraz widziałem znajomych pobierających lekcje z HTML.</description>
-    </item>
-    <item>
-      <title>Zmiany</title>
-      <link>https://example.org/changelog/</link>
-      <pubDate>Wed, 24 Jul 2024 11:05:34 +0200</pubDate>
-      <guid>https://example.org/changelog/</guid>
-      <description>24 VII 2024 - strona główna Postawienie strony na framework&amp;rsquo;u zajmuje tak z 2-3 godziny. Korzystałem dosyć dawno z narzędzia gohugo, dlatego musiałem sobie przypomnieć jak działa.&#xA;Piszę wszystko od zera oczywiście.</description>
     </item>
   </channel>
 </rss>

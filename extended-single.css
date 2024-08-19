@@ -1,13 +1,14 @@
 body {
     margin: 0;
     display: flex;
-    font-size: 18px;
+    font-size: 17px;
+    height: 100vh;
 }
 
 nav#TableOfContents {
     flex-shrink: 0;
-    margin: 0;
     width: 270px;
+    margin: 0;
     padding: 3px 15px;
     border-color: #A0A0A0;
     border-style: solid;
@@ -16,12 +17,8 @@ nav#TableOfContents {
 
 nav#TableOfContents ul {
     padding-left: 20px;
-}
-
-main {
-    flex-grow: 1;
-    min-height: 100vh;
-    margin-bottom: 150px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 button#TocButton {
@@ -29,11 +26,23 @@ button#TocButton {
 }
 
 main {
-    padding: 0 20px;
+    flex-grow: 1;
+    overflow: auto;
+    padding: 0 20px 120px 20px;
 }
 
-h2, h3 {
+h2 {
     margin: 13px 0;
+}
+
+h3 {
+    margin: 22px 0 13px 0;
+}
+
+h3::after {
+    content: ' ';
+    display: block;
+    border: 0.6px solid black;
 }
 
 a {
@@ -43,15 +52,6 @@ a {
 dfn[title] {
     text-decoration: underline;
     text-decoration-style: dotted;
-}
-
-figure {
-    text-align: center;
-}
-
-figcaption > p {
-    font-style: italic;
-    margin: 10px 0;
 }
 
 q {
@@ -90,12 +90,26 @@ th, td {
     border-collapse: collapse;
 }
 
-div.youtube {
-    margin: 18px auto;
+figcaption > p {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+figure, div.youtube {
+    margin: 1em 40px;
     text-align: center;
 }
 
-div.youtube > iframe {
-    width: 640px;
-    height: 360px;
+img {
+    max-width: 100%;
+    max-height: 350px;
+    border: 3px solid black;
+}
+
+iframe {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 16 / 9;
+    background-color: black;
+    border: 3px solid black;
 }
