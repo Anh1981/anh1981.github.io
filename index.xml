@@ -10,23 +10,23 @@
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Final Fantasy</title>
-      <link>https://example.org/posts/media/final-fantasy/</link>
+      <link>https://example.org/media/final-fantasy/</link>
       <pubDate>Fri, 26 Jul 2024 14:55:55 +0200</pubDate>
-      <guid>https://example.org/posts/media/final-fantasy/</guid>
+      <guid>https://example.org/media/final-fantasy/</guid>
       <description>Coś czuję, że to będzie jeden z najdłuższych postów&amp;hellip;&#xA;Dla mnie seria Final Fantasy to był falstart. Moim pierwszym Final Fantasy było FFXV. Grę udało mi się, po kilku próbach powrotu do gry, ukończyć i nie zostawiło u mnie dobrego wrażenia. Pewnego dnia znajomy z erasmusa z Włoch powiedział mi, że jest to jedna z jego ulubionych franczyz i polecił mi spróbować jeszcze raz, po prostu od innej gry. FFVII Remake jest jedną z udanych nowszych gier Final Fantasy, więc zdecydowałem, że będzie to kolejne Final Fantasy jakie zagram (tyle, że oryginał).</description>
     </item>
     <item>
       <title>Zakup Playstation 3</title>
-      <link>https://example.org/posts/tools/buying-playstation-3/</link>
+      <link>https://example.org/tools/buying-playstation-3/</link>
       <pubDate>Thu, 25 Jul 2024 21:42:02 +0200</pubDate>
-      <guid>https://example.org/posts/tools/buying-playstation-3/</guid>
+      <guid>https://example.org/tools/buying-playstation-3/</guid>
       <description>Playstation 3 to konsola siódmej generacji. Dobrze znamy wojnę konsol:&#xA;Console Introduced Discontinued Units Sold Xbox 360 2005 2016 84,700,000 PlayStation 3 2006 2017 87,400,000 Wii 2005 2017 101,630,000 Konsole dotychczas Muszę przyznać, że jestem fanboy&amp;rsquo;em Sony. W sensie, to nie tak, że fanatycznie uprawiam kult Playstation. Po prostu, faktycznie, każda konsola jaką kiedykolwiek miałem jest firmy Sony.&#xA;PSP PSP to przenośna konsola, która wyszła w roku 2005 w Europie. Dostałem ją od rodziców, gdy miałem około 10 lat.</description>
     </item>
     <item>
       <title>Pisanie stron internetowych</title>
-      <link>https://example.org/posts/coding/hugo-single/</link>
+      <link>https://example.org/unix/hugo-single/</link>
       <pubDate>Wed, 24 Jul 2024 12:07:14 +0200</pubDate>
-      <guid>https://example.org/posts/coding/hugo-single/</guid>
+      <guid>https://example.org/unix/hugo-single/</guid>
       <description>Jest rok 2024. Pisanie własnych stron internetowych jest czymś z czasów zamierzchłych. Przeważająca większość internautów korzysta z platform jak Facebook, Twitter i Youtube.&#xA;Moja opinia w uproszczeniu wygląda tak:&#xA;Korzystanie z mediów społecznościowych jest jak Windows.&#xA;Wyżej wymienione aplikacje internetowe są stworzone nie tylko w naszym interesie, ale raczej twórców. Muszą na czymś zarabiać. Zamiast korzystać z obcych platform, można samodzielnie napisać własną stronę. Nieraz widziałem znajomych pobierających lekcje z HTML.</description>
     </item>
   </channel>

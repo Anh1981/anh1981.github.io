@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Multimedia on My New Hugo Site</title>
+    <link>https://example.org/media/</link>
+    <description>Recent content in Multimedia on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Jul 2024 14:55:55 +0200</lastBuildDate>
+    <atom:link href="https://example.org/media/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Final Fantasy</title>
+      <link>https://example.org/media/final-fantasy/</link>
+      <pubDate>Fri, 26 Jul 2024 14:55:55 +0200</pubDate>
+      <guid>https://example.org/media/final-fantasy/</guid>
+      <description>Coś czuję, że to będzie jeden z najdłuższych postów&amp;hellip;&#xA;Dla mnie seria Final Fantasy to był falstart. Moim pierwszym Final Fantasy było FFXV. Grę udało mi się, po kilku próbach powrotu do gry, ukończyć i nie zostawiło u mnie dobrego wrażenia. Pewnego dnia znajomy z erasmusa z Włoch powiedział mi, że jest to jedna z jego ulubionych franczyz i polecił mi spróbować jeszcze raz, po prostu od innej gry. FFVII Remake jest jedną z udanych nowszych gier Final Fantasy, więc zdecydowałem, że będzie to kolejne Final Fantasy jakie zagram (tyle, że oryginał).</description>
+    </item>
+  </channel>
+</rss>

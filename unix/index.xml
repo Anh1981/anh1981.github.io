@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unix on My New Hugo Site</title>
+    <link>https://example.org/unix/</link>
+    <description>Recent content in Unix on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Jul 2024 12:07:14 +0200</lastBuildDate>
+    <atom:link href="https://example.org/unix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pisanie stron internetowych</title>
+      <link>https://example.org/unix/hugo-single/</link>
+      <pubDate>Wed, 24 Jul 2024 12:07:14 +0200</pubDate>
+      <guid>https://example.org/unix/hugo-single/</guid>
+      <description>Jest rok 2024. Pisanie własnych stron internetowych jest czymś z czasów zamierzchłych. Przeważająca większość internautów korzysta z platform jak Facebook, Twitter i Youtube.&#xA;Moja opinia w uproszczeniu wygląda tak:&#xA;Korzystanie z mediów społecznościowych jest jak Windows.&#xA;Wyżej wymienione aplikacje internetowe są stworzone nie tylko w naszym interesie, ale raczej twórców. Muszą na czymś zarabiać. Zamiast korzystać z obcych platform, można samodzielnie napisać własną stronę. Nieraz widziałem znajomych pobierających lekcje z HTML.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 2vh 3vw;
+}
+
+main {
+    text-align: center;
+    padding: 5vh 0;
+}
+
+a, a:visited {
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+

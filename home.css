@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+    font-size: 25px;
+}
+
+main {
+    text-align: center;
+    padding: 30vh 40vw;
+}
+
+a, a:visited {
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    font-size: 26px;
+}
+

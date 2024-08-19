@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Narzędzia on My New Hugo Site</title>
+    <link>https://example.org/tools/</link>
+    <description>Recent content in Narzędzia on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Jul 2024 21:42:02 +0200</lastBuildDate>
+    <atom:link href="https://example.org/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zakup Playstation 3</title>
+      <link>https://example.org/tools/buying-playstation-3/</link>
+      <pubDate>Thu, 25 Jul 2024 21:42:02 +0200</pubDate>
+      <guid>https://example.org/tools/buying-playstation-3/</guid>
+      <description>Playstation 3 to konsola siódmej generacji. Dobrze znamy wojnę konsol:&#xA;Console Introduced Discontinued Units Sold Xbox 360 2005 2016 84,700,000 PlayStation 3 2006 2017 87,400,000 Wii 2005 2017 101,630,000 Konsole dotychczas Muszę przyznać, że jestem fanboy&amp;rsquo;em Sony. W sensie, to nie tak, że fanatycznie uprawiam kult Playstation. Po prostu, faktycznie, każda konsola jaką kiedykolwiek miałem jest firmy Sony.&#xA;PSP PSP to przenośna konsola, która wyszła w roku 2005 w Europie. Dostałem ją od rodziców, gdy miałem około 10 lat.</description>
+    </item>
+  </channel>
+</rss>
