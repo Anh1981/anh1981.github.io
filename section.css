@@ -1,6 +1,5 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: antiquewhite;
     font-size: 18px;
     padding: 2vh 3vw;
 }
@@ -11,11 +10,11 @@ main {
 }
 
 a, a:visited {
-    color: gray;
+    color: purple;
     text-decoration: none;
 }
 
 a:hover {
-    color: white;
+    color: red;
 }
 

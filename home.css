@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: antiquewhite;
     font-size: 25px;
 }
 
@@ -9,12 +9,12 @@ main {
 }
 
 a, a:visited {
-    color: gray;
+    color: purple;
     text-decoration: none;
 }
 
 a:hover {
-    color: white;
+    color: red;
     font-size: 26px;
 }
 
