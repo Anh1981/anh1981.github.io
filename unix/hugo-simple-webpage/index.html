@@ -12,11 +12,11 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#strona-statyczna">Strona statyczna</a>
+    <li><a href="#moja-strona-internetowa">Moja strona internetowa</a>
       <ul>
-        <li><a href="#definicja">Definicja</a></li>
-        <li><a href="#narzędzie-hugo">Narzędzie Hugo</a></li>
-        <li><a href="#styl">Styl</a></li>
+        <li><a href="#strona-statyczna">Strona statyczna</a></li>
+        <li><a href="#czemu-hugo">Czemu Hugo</a></li>
+        <li><a href="#minimalizm-stylu">Minimalizm stylu</a></li>
       </ul>
     </li>
     <li><a href="#html">HTML</a>
@@ -24,7 +24,7 @@
         <li><a href="#struktura-dokumentu">Struktura dokumentu</a></li>
         <li><a href="#podstawowe-znaczniki">Podstawowe znaczniki</a></li>
         <li><a href="#formatowanie-tekstu">Formatowanie tekstu</a></li>
-        <li><a href="#znaczniki-informujące-o-treści">Znaczniki informujące o treści</a></li>
+        <li><a href="#znaczniki-treści">Znaczniki treści</a></li>
       </ul>
     </li>
     <li><a href="#css">CSS</a>
@@ -36,9 +36,9 @@
     <li><a href="#javascript">JavaScript</a></li>
     <li><a href="#hugo">Hugo</a>
       <ul>
-        <li><a href="#abstrakcja-strony-internetowej">Abstrakcja strony internetowej</a></li>
+        <li><a href="#abstrakcja-strony">Abstrakcja strony</a></li>
         <li><a href="#projekt-w-hugo">Projekt w Hugo</a></li>
-        <li><a href="#wypełnianie-wzorca-treścią">Wypełnianie wzorca treścią</a></li>
+        <li><a href="#wypełnianie-wzorca">Wypełnianie wzorca</a></li>
         <li><a href="#markdown">Markdown</a></li>
         <li><a href="#shortcode">Shortcode</a></li>
         <li><a href="#wybieranie-wzorca">Wybieranie wzorca</a></li>
@@ -59,32 +59,13 @@
     <h1>Pisanie stron internetowych</h1>
     <p>Jest rok 2024. Pisanie własnych stron internetowych jest czymś z czasów
 zamierzchłych. Przeważająca większość internautów korzysta z platform jak
-<cite>Facebook</cite>,
-<cite>Twitter</cite> i
-<cite>Youtube</cite>.</p>
-<p>Moja opinia w uproszczeniu wygląda tak:</p>
-<blockquote>
-<p>Korzystanie z mediów społecznościowych jest jak <code>Windows</code>.</p>
-</blockquote>
-<p>Wyżej wymienione aplikacje internetowe są stworzone nie tylko w naszym interesie,
-ale raczej twórców. Muszą na czymś zarabiać. Zamiast korzystać z obcych
-platform, można samodzielnie napisać własną stronę. Nieraz widziałem
-znajomych pobierających lekcje z
-<dfn title="HyperText Markup Language" >HTML</dfn>.
-Pora użyć tę wiedzę w praktyce.</p>
-<figure><img src="/unix/hugo-single/coding.gif"
-    alt="anime girl coding"><figcaption>
-      <p>Zmuszony do korzystania z graficznego
-interfejsu użytkownika, żeby napisać stronę internetową.</p>
-    </figcaption>
-</figure>
-
-<h2 id="strona-statyczna">Strona statyczna</h2>
-<p>Na początek, warto zrozumieć abstrakcyjną koncepcję strony statycznej.
-Dlaczego strona statyczna? Bo piszemy blog. No dobrze, no to piszemy
-stronę statyczną. To jakiego narzędzia użyć? Pisanie każdej strony
-odręcznie to bardzo wolny proces.</p>
-<h3 id="definicja">Definicja</h3>
+<cite><a href="#bibliografia">Facebook</a></cite>,
+<cite><a href="#bibliografia">Twitter</a></cite> i
+<cite><a href="#bibliografia">Youtube</a></cite>.</p>
+<p>Mimo to, pokażę Ci jak napisać własną stronę internetową. :)</p>
+<h2 id="moja-strona-internetowa">Moja strona internetowa</h2>
+<p>Na początku opowiem dlaczego mój blog wygląda tak, a nie inaczej.</p>
+<h3 id="strona-statyczna">Strona statyczna</h3>
 <p>Z wikipedii <dfn>Static web page</dfn>:</p>
 <blockquote>
 <p>A static web page, sometimes called a flat page or a stationary page,
@@ -96,11 +77,15 @@ pozostanie w stanie pierwotnym po odświeżeniu. Takie strony są bardzo
 bezpieczne. Nie ma ryzyka, że ktoś ukradnie Tobie coś czego nie chcesz
 nikomu pokazać.</p>
 <p>W jakimś sensie ryzyko dalej jest, bo mógłbyś dobrowolnie spowodować wyciek danych.</p>
-<h3 id="narzędzie-hugo">Narzędzie Hugo</h3>
-<p>Każda strona internetowa to dokument HTML. Dokument HTML to kod, który przeglądarka przetwarza
+<h3 id="czemu-hugo">Czemu Hugo</h3>
+<p>Każda strona internetowa to dokument
+<cite><a href="#bibliografia">HTML</a></cite>.
+Dokument
+<cite><a href="#bibliografia">HTML</a></cite>
+to kod, który przeglądarka przetwarza
 na stronę internetową. Żeby spojrzeć na kod, naciśnij prawym przyciskiem myszy
 i wybierz opcję w stylu <samp>View page source</samp>. Możesz też otworzyć
-narzędzia developera przyciskiem <kbd>F12</kbd> na <cite>Firefox</cite>
+narzędzia developera przyciskiem <kbd>F12</kbd> na <cite><a href="#bibliografia">Firefox</a></cite>
 lub podobnym przyciskiem na innej przeglądarce.</p>
 <p>Pisząc stronę w HTML, skupiamy się głównie na dwóch rzeczach. Po pierwsze, na strukturze strony.
 Struktura obecnej strony wygląda mniej więcej tak:</p>
@@ -113,34 +98,48 @@ Struktura obecnej strony wygląda mniej więcej tak:</p>
 </span></span><span style="display:flex;"><span>        <span style="color:#080;font-style:italic">&lt;!-- Treść --&gt;</span>
 </span></span><span style="display:flex;"><span>    &lt;/<span style="color:#000080;font-weight:bold">main</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#000080;font-weight:bold">body</span>&gt;
-</span></span></code></pre></div><p>Każdy znacznik HTML zaczyna się i kończy nawiasami <em>&lt;&gt;</em>. Nazwę znacznika wpisujemy
-do obu nawiasów. Znaczniki HTML można sobie wyobrażać jako pudełka. <code>&lt;body&gt;</code> to
+</span></span></code></pre></div><p>Każdy znacznik
+zaczyna się i kończy nawiasami <em>&lt;&gt;</em>. Nazwę znacznika wpisujemy
+do obu nawiasów. Znaczniki
+<cite><a href="#bibliografia">HTML</a></cite>
+można sobie wyobrażać jako pudełka. <code>&lt;body&gt;</code> to
 główne pudełko, a cała reszta pudełek jest wewnątrz. Generyczne pudełko zwykle
 ma nazwę <code>&lt;div&gt;</code>. Pudełka <code>&lt;nav&gt;</code> oraz <code>&lt;main&gt;</code> działają podobnie do <code>&lt;div&gt;</code>. Tak naprawdę,
 to można wszystkie pudełka wewnątrz <code>&lt;body&gt;</code> nazwać <code>&lt;div&gt;</code>, ale nazwy pudełek typu <code>&lt;nav&gt;</code>
 i <code>&lt;main&gt;</code> są semantyczne. Łatwiej połapać się co jest czym.</p>
-<p>Po drugie, podczas pisania tekstu często chcemy coś podkreślić lub zaznaczyć, że treść
+<ol>
+<li>Zazwyczaj pisząc strony internetowe chcemy, żeby poszczególne grupy stron miały te samą strukturę
+i wygląd. Taki efekt możemy uzyskać poprzez proste &ldquo;kopiuj/wklej&rdquo;. Rozwiązanie staje się problemem,
+gdy chcemy wprowadzić zmianę, taką zmianę trzeba by było wprowadzić do każdego pliku. Jest to bardzo
+często trudne i czasochłonne. Wzorce w <cite><a href="#bibliografia">Hugo</a></cite> niwelują duplikację kodu, dzięki
+czemu zmianę wystarczy wprowadzić w najwyżej jednym miejscu.</li>
+</ol>
+<p>Podczas pisania tekstu często chcemy coś podkreślić lub zaznaczyć, że treść
 jest danego typu. Na przykład, w książkach czasami kawałki tekstu są pogrubione albo
 umieszczane jest zdjęcie. Na komputerze trzeba wyraźnie wskazać przeglądarce jak wyświetlić
 fragment materiału.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#000080;font-weight:bold">p</span>&gt;Każda strona internetowa to dokument HTML. Dokument HTML to kod,
-</span></span><span style="display:flex;"><span>który przeglądarka przetwarza na stronę internetową. Żeby spojrzeć
-</span></span><span style="display:flex;"><span>na kod, naciśnij prawym przyciskiem myszy i wybierz opcję w stylu
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#000080;font-weight:bold">samp</span>&gt;View page source&lt;/<span style="color:#000080;font-weight:bold">samp</span>&gt;. Możesz też otworzyć narzędzia developera
-</span></span><span style="display:flex;"><span>przyciskiem &lt;<span style="color:#000080;font-weight:bold">kbd</span>&gt;F12&lt;/<span style="color:#000080;font-weight:bold">kbd</span>&gt; na &lt;<span style="color:#000080;font-weight:bold">cite</span>&gt;Firefox&lt;/<span style="color:#000080;font-weight:bold">cite</span>&gt; lub podobnym
-</span></span><span style="display:flex;"><span>przyciskiem na innej przeglądarce.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
-</span></span></code></pre></div><p>Oto jeden z paragrafów na tej stronie. Paragrafy oznaczamy znacznikiem <code>&lt;p&gt;</code>.
-Wewnątrz paragrafu mamy jeszcze kilka znaczników, które nadają znaczenie
-fragmentom tekstu.</p>
-<p>Ogólnie, to gdybym napisał cały ten dokument odręcznie w notatniku, to
-zobaczysz tę samą stronę. Chcę, żeby inne strony też miały taką samą strukturę.
-Prostym rozwiązaniem byłoby po prostu skopiowanie istniejącego dokumentu. No
-dobrze, ale co jeżeli jednak coś mi się nie podoba w tej strukturze? Zmianę
-musiałbym wprowadzić na każdej stronie. Jest to męczące. Po drugie, pisanie
-dokumentu w stylu HTML jest nieporęczne i można użyć lepszego formatu plików np.
-<cite>markdown</cite>. Rozwiązaniem jest program
-<cite>Hugo</cite>.</p>
-<h3 id="styl">Styl</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#000080;font-weight:bold">p</span>&gt;Każda strona internetowa to dokument
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#000080;font-weight:bold">cite</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#bibliografia&#34;</span>&gt;HTML&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">cite</span>&gt;.
+</span></span><span style="display:flex;"><span>Dokument
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#000080;font-weight:bold">cite</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#bibliografia&#34;</span>&gt;HTML&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">cite</span>&gt;
+</span></span><span style="display:flex;"><span>to kod, który przeglądarka przetwarza
+</span></span><span style="display:flex;"><span>na stronę internetową. Żeby spojrzeć na kod, naciśnij prawym przyciskiem myszy
+</span></span><span style="display:flex;"><span>i wybierz opcję w stylu &lt;<span style="color:#000080;font-weight:bold">samp</span>&gt;View page source&lt;/<span style="color:#000080;font-weight:bold">samp</span>&gt;. Możesz też otworzyć
+</span></span><span style="display:flex;"><span>narzędzia developera przyciskiem &lt;<span style="color:#000080;font-weight:bold">kbd</span>&gt;F12&lt;/<span style="color:#000080;font-weight:bold">kbd</span>&gt; na &lt;<span style="color:#000080;font-weight:bold">cite</span>&gt;&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#bibliografia&#34;</span>&gt;Firefox&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">cite</span>&gt;
+</span></span><span style="display:flex;"><span>lub podobnym przyciskiem na innej przeglądarce.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#000080;font-weight:bold">p</span>&gt;Każda strona internetowa to dokument
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><ol start="2">
+<li>Pisanie w formacie <cite><a href="#bibliografia">HTML</a></cite> może być nieporęczne. W <cite><a href="#bibliografia">Hugo</a></cite>
+każda strona to pojedynczy plik <cite><a href="#bibliografia">Markdown</a></cite>, który jest konwertowany do pliku
+<cite><a href="#bibliografia">HTML</a></cite>.
+<dfn title="the structure of statements in a computer language" >
+Syntax</dfn>
+w <cite><a href="#bibliografia">Markdown</a></cite> jest zdecydowanie krótszy i
+być może bardziej intuicyjny dla niektórych.</li>
+</ol>
+<p>Jeżeli celem jest stworzenie kilku stron, to nie warto korzystać z tego narzędzia.</p>
+<h3 id="minimalizm-stylu">Minimalizm stylu</h3>
 <p>Prawie wszystkie strony wyraźnie odchodzą od domyślnego stylu nagłówków. Jest to jedna z głównych
 rzeczy, która wyróżnia stronę internetową. W porównaniu, moja strona może wydawać się <em>uboga</em>.
 Swój wybór tłumaczę tak: <q>Jestem minimalistą, dlatego wprowadzam zmiany wtedy i tylko wtedy,
@@ -149,17 +148,17 @@ Poza tym, mamy do czynienia z odwrotną psychologią. Ze względu na to, że ws
 strony wyraźnie odchodzą od standardu, moja strona się wyróżnia. W końcu, nawet jeżeli
 ktoś wyraźnie nie lubi stylu tej strony, to <del>wina spada nie tylko na mnie, ale też na standard</del>.
 Summa summarum, oficjalne teksty zawsze są czarne na biało. Widziałem też ludzi, którzy chcieli
-przekazać wyraźny kawał tekstu w <cite>Google Docs</cite>. Przecież zwykła strona HTML
+przekazać wyraźny kawał tekstu w <cite><a href="#bibliografia">Google Docs</a></cite>. Przecież zwykła strona
+<cite><a href="#bibliografia">HTML</a></cite>
 z domyślnym stylem jest o wiele lepsza.</p>
-<figure><img src="/unix/hugo-single/fight.gif"
-    alt="gintama punch fight"><figcaption>
-      <p>Uparcie bronię niczego.</p>
-    </figcaption>
-</figure>
-
+<p>Jednym słowem, jestem leniwy (w złym znaczeniu).</p>
 <h2 id="html">HTML</h2>
-<p>Z <cite>Hugo</cite> nie da się korzystać bez znajomości narzędzi. Wcześniej już
-opowiadałem o HTML-u, teraz wyjaśnię istotne szczegóły. Mimo tego, że znaczników HTML jest
+<p>Z <cite><a href="#bibliografia">Hugo</a></cite> nie da się korzystać bez znajomości narzędzi programowania. Wcześniej
+już opowiadałem o
+<cite><a href="#bibliografia">HTML</a></cite>-u,
+teraz wyjaśnię istotne szczegóły. Mimo tego, że znaczników
+<cite><a href="#bibliografia">HTML</a></cite>
+jest
 dużo, wiele osób z większości w ogóle nie korzysta. Myślę, że warto przyjrzeć się każdemu z
 nich. Pozwoli to na dokładniejsze wyrażanie swoich myśli, a tekst będzie bogatszy.</p>
 <h3 id="struktura-dokumentu">Struktura dokumentu</h3>
@@ -173,23 +172,27 @@ nich. Pozwoli to na dokładniejsze wyrażanie swoich myśli, a tekst będzie bog
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#000080;font-weight:bold">body</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#000080;font-weight:bold">html</span>&gt;
 </span></span></code></pre></div><p>Wewnątrz znacznika <code>&lt;head&gt;</code> wpisujemy wszystkie znaczniki dotyczące opisu strony,
-np. pliki CSS i JS, tytuł strony, ikonka strony. Cała treść strony wpada do znacznika <code>&lt;body&gt;</code>.</p>
+np. pliki
+<cite><a href="#bibliografia">CSS</a></cite>
+i
+<cite><a href="#bibliografia">JS</a></cite>,
+tytuł strony, ikonka strony. Cała treść strony wpada do znacznika <code>&lt;body&gt;</code>.</p>
 <h3 id="podstawowe-znaczniki">Podstawowe znaczniki</h3>
 <ul>
 <li><code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code>, nagłówki rozdziałów. Do nagłówków można dołączyć atrybut <code>id</code>. W ten
 sposób można przenieść się do rodziału za pomocą adresowania <em>#</em>. Aby spróbować, przejdź
-na samą górę i wróć wybierając rodział <cite>Podstawowe znaczniki</cite>.</li>
+na samą górę i wróć wybierając rodział &ldquo;Podstawowe znaczniki&rdquo;.</li>
 <li><code>&lt;p&gt;</code>, paragraf. Kawał tekstu.</li>
-<li><code>&lt;a&gt;</code>, link. Z angielskiego, <cite>anchor</cite>.</li>
+<li><code>&lt;a&gt;</code>, link. Z angielskiego, <dfn>anchor</dfn>.</li>
 <li><code>&lt;ol&gt;</code>, <code>&lt;ul&gt;</code> i <code>&lt;li&gt;</code>, lista uporządkowana lub nieuporządkowana. Kolejno
-<cite>ordered list</cite>,
-<cite>unordered list</cite>,
-<cite>list item</cite>.
+<dfn>ordered list</dfn>,
+<dfn>unordered list</dfn>,
+<dfn>list item</dfn>.
 Można też skorzystać ze znaczników <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code>, <code>&lt;dd&gt;</code>.</li>
 </ul>
 <h3 id="formatowanie-tekstu">Formatowanie tekstu</h3>
 <ul>
-<li><code>&lt;em&gt;</code>, tekst pochyły, z angielskiego <cite>emphasis</cite>.</li>
+<li><code>&lt;em&gt;</code>, tekst pochyły, z angielskiego <dfn>emphasis</dfn>.</li>
 <li><code>&lt;strong&gt;</code>, tekst pogrubiony.</li>
 <li><code>&lt;u&gt;</code>, tekst podkreślony.</li>
 <li><code>&lt;del&gt;</code>, <code>&lt;ins&gt;</code>, ten pierwszy przekreśla tekst, a drugi dodaje tekst, który
@@ -199,7 +202,7 @@ powinien być wstawiony za przekreślenie.</li>
 <li><code>&lt;pre&gt;</code>, wszystkie białe znaki w tekście pozostają bez zmian.</li>
 <li><code>&lt;ruby&gt;</code>, <code>&lt;rp&gt;</code>, <code>&lt;rt&gt;</code>, adnotacje. Bardzo przydatne do języków z pismem chińskim.</li>
 </ul>
-<h3 id="znaczniki-informujące-o-treści">Znaczniki informujące o treści</h3>
+<h3 id="znaczniki-treści">Znaczniki treści</h3>
 <ul>
 <li><code>&lt;abbr&gt;</code>, <code>&lt;dfn&gt;</code>, pierwszy wyraża skrót, a drugi termin, który będzie zaopatrzony o definicję.
 W zasadzie, to nawet jeżeli mam do czynienia ze skrótem, to i tak korzystam z <code>&lt;dfn&gt;</code>.</li>
@@ -217,11 +220,11 @@ W zasadzie, to nawet jeżeli mam do czynienia ze skrótem, to i tak korzystam z 
 <h2 id="css">CSS</h2>
 <p>Znaczniki są porozrzucane wszędzie, a w większości przypadków chcemy, żeby te same
 znaczniki miały ten sam styl. Stylizacja każdego znacznika jeden po jednym byłoby uciążliwe.
-Do stylizacji strony służy <dfn title="Cascading Style Sheets" >CSS</dfn>.</p>
-<p>Plik CSS załadowujemy do strony za pomocą znacznika:</p>
+Do stylizacji strony służy <cite><a href="#bibliografia">CSS</a></cite>.</p>
+<p>Plik <cite><a href="#bibliografia">CSS</a></cite> załadowujemy do strony za pomocą znacznika:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#000080;font-weight:bold">link</span> <span style="color:#f00">rel</span>=<span style="color:#00f">&#34;stylesheet&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;/extended-single.css&#34;</span>&gt;
 </span></span></code></pre></div><h3 id="selektory">Selektory</h3>
-<p>Plik CSS to zbiór reguł. Struktura reguły wygląda tak:</p>
+<p>Plik <cite><a href="#bibliografia">CSS</a></cite> to zbiór reguł. Struktura reguły wygląda tak:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#000080;font-weight:bold">selektor1</span>, <span style="color:#000080;font-weight:bold">selektor2</span>... {
 </span></span><span style="display:flex;"><span>    <span style="color:#080;font-style:italic">/* ustawienia stylu */</span>
 </span></span><span style="display:flex;"><span>}
@@ -234,10 +237,12 @@ Wybrać znacznik można po:</p>
 <li>atrybucie, np. <code>p[data-dog='golden-retriever']</code></li>
 <li>lokalizacji, <code>&gt;</code>, <code>+</code>, <code>~</code>, (spacja), np. <code>p &gt; ul</code></li>
 </ul>
-<p>CSS dla tej strony możesz obejrzeć
+<p><cite><a href="#bibliografia">CSS</a></cite> dla tej strony możesz obejrzeć
 <a href="/extended-single.css">tutaj</a>.</p>
 <h3 id="ułożenie-pudełek">Ułożenie pudełek</h3>
-<p>Po przyjrzeniu się dokumentowi HTML, wiemy które pudełko jest wewnątrz którego pudełka.
+<p>Po przyjrzeniu się dokumentowi
+<cite><a href="#bibliografia">HTML</a></cite>
+, wiemy które pudełko jest wewnątrz którego pudełka.
 Nadal nie wiemy jak je rozstawić. Domyślnie pudełka mają dwa tryby: <dfn>inline</dfn>
 i <dfn>block</dfn>. Inline znaczy, że pudełko można ustawić obok siebie i po prostu
 przenieść na dół jak zabraknie miejsca poziomo. Block znaczy, że pudełko zawsze
@@ -254,11 +259,15 @@ ale wymaga więcej pracy. Natomiast flexbox jest prosty.</p>
 wysokość najdłuższego pionowo pudełka. Pudełka wewnątrz są rozszerzane/skurczane w zależności
 od ilości treści w każdym z nich. Układ naszej strony to flexbox.</p>
 <h2 id="javascript">JavaScript</h2>
-<p>Plik JavaScript ładujemy do strony HTML tak:</p>
+<p>Plik
+<cite><a href="#bibliografia">JavaScript</a></cite> ładujemy do strony HTML tak:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#000080;font-weight:bold">script</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;/extended-single.js&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">script</span>&gt;
-</span></span></code></pre></div><p>Z JavaScriptem jest tak, że wymaga on trochę więcej wiedzy informatycznej.
-Opowieść o JavaScript&rsquo;cie to raczej temat na inny post. Na stronach statycznych
-<dfn title="JavaScript" >JS</dfn> wykorzystywany jest do podstawowych rzeczy.</p>
+</span></span></code></pre></div><p>Z <cite><a href="#bibliografia">JavaScript'</a></cite>em jest tak, że wymaga trochę więcej
+wiedzy informatycznej.
+Opowieść o
+<cite><a href="#bibliografia">JavaScript</a></cite>&rsquo;cie
+to raczej temat na inny post. Na stronach statycznych
+<cite><a href="#bibliografia">JS</a></cite> wykorzystywany jest do podstawowych rzeczy.</p>
 <p>Przykład funkcji:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000080;font-weight:bold">function</span> toggleToc() {
 </span></span><span style="display:flex;"><span>    <span style="color:#000080;font-weight:bold">let</span> toc = document.getElementById(<span style="color:#00f">&#39;TableOfContents&#39;</span>);
@@ -272,20 +281,18 @@ w przeciwnym razie z powrotem na pusty napis.</p>
 funkcję <code>toggleToc()</code>. Jeżeli atrybut <code>display</code> jest ustawiony na <code>none</code>,
 to pudełko się nie wyświetla. W efekcie naciskając na przycisk chowamy/odsłaniamy
 spis treści.</p>
-<p>Z JavaScriptu korzystamy, gdy chcemy dynamicznie zmienić treść dokumentu HTML.
-W zasadzie można napisać stronę bez JavaScriptu, chociaż czasami wygodnie jest
+<p>Z
+<cite><a href="#bibliografia">JavaScript</a></cite>&rsquo;u
+korzystamy, gdy chcemy dynamicznie zmienić treść dokumentu
+<cite><a href="#bibliografia">HTML</a></cite>.
+W zasadzie można napisać stronę bez
+<cite><a href="#bibliografia">JavaScript</a></cite>&rsquo;u,
+chociaż czasami wygodnie jest
 coś zaimplementować użytkownikowi, np. filtrowanie postów z listy za pomocą
 paska wyszukiwania.</p>
 <h2 id="hugo">Hugo</h2>
-<p>Nareszcie przechodzimy do meritum posta, czyli narzędzia <cite>Hugo</cite>.</p>
-<figure><img src="/unix/hugo-single/congratulations.gif"
-    alt="senko fox sleep"><figcaption>
-      <p>Myślałem, że będzie tylko o Hugo. Skończyło się na tym,
-że musiałem opisać cały ten cholerny HTML/CSS/JS&hellip;</p>
-    </figcaption>
-</figure>
-
-<h3 id="abstrakcja-strony-internetowej">Abstrakcja strony internetowej</h3>
+<p>Nareszcie przechodzimy do meritum posta, czyli narzędzia <cite><a href="#bibliografia">Hugo</a></cite>.</p>
+<h3 id="abstrakcja-strony">Abstrakcja strony</h3>
 <p>Każda strona internetowa ma swoją ścieżkę <dfn title="Uniform Resource Locator" >URL</dfn>.
 Najpierw jest adres do serwera, po adresie mamy ścieżkę zasobu do którego chcemy uzyskać dostęp.
 Przykładowo URL <code>https://anh1981.github.io/posts/coding/hugo-single</code> wysyła żądanie do serwera
@@ -293,10 +300,6 @@ pod adresem <code>anh1981.github.io</code> pod ścieżką <code>/posts/coding/hu
 <code>index.html</code>. Dociekliwi zauważą, że struktura ścieżki to jest
 <dfn title="graf nieskierowany, który jest acykliczny i spójny" >drzewo</dfn> z
 <dfn title="pierwszy węzeł drzewa" >korzeniem</dfn> w <code>/</code>.</p>
-<figure><img src="/unix/hugo-single/pathtree.gif"
-    alt="path tree" height="280px">
-</figure>
-
 <p>Każda strona jest węzłem w drzewie. Poruszać się po drzewie nie trzeba wyłącznie w dół, można
 zawsze wstawić znacznik <code>&lt;a&gt;</code> do któregokolwiek węzła.</p>
 <p>Na ogół chcemy, żeby
@@ -308,18 +311,21 @@ ląduje na stronie głównej <code>/</code>, wybiera posty <code>/posts</code>, 
 <code>/posts/coding/hugo-single</code>.</p>
 <p>Węzeł może mieć potomków lub być <dfn title="węzeł, który nie ma potomków" >liściem</dfn>.
 np. Strona <code>/posts/coding/hugo-single</code> jest liściem drzewa i z tej strony nie da się zejść głębiej.
-W <cite>Hugo</cite> liście nazywamy <dfn>Single Page</dfn>. Jeżeli strona
+W <cite><a href="#bibliografia">Hugo</a></cite> liście nazywamy <dfn>Single Page</dfn>. Jeżeli strona
 ma przynajmniej jednego potomka, to nazywamy ją <dfn>List Page</dfn>. Oczekujemy, że
 strona typu List w którymś miejscu będzie miała listę odnośników do potomków.</p>
-<p>Single i List Page mają własny odpowiedni wzorzec dokumentu HTML. Dosyć łatwo jest rozpoznać, czy
+<p>Single i List Page mają własny odpowiedni wzorzec dokumentu
+<cite><a href="#bibliografia">HTML</a></cite>.
+Dosyć łatwo jest rozpoznać, czy
 strona jest Single lub List, więc przydzielanie wzorca jest automatyczne. Wzorców Single i List Page
 można mieć więcej. Wystarczy je nazwać, a potem wybrać przy pisaniu nowej strony.</p>
+<p><em>BTW</em>, w dokumentacji zmieniono termin List Page na Section Page.</p>
 <h3 id="projekt-w-hugo">Projekt w Hugo</h3>
-<p>Zapomniałem wspomnieć o pewnej poprzeczce. <cite>Hugo</cite> jest aplikacją terminalową.
+<p>Zapomniałem wspomnieć o pewnej poprzeczce. <cite><a href="#bibliografia">Hugo</a></cite> jest aplikacją terminalową.
 Omawiając ten podrozdział będę zmuszony założyć, że umiesz korzystać z konsoli komputera. Planuję
 napisać post na ten temat w niedalekiej przyszłości. Na chwilę obecną mam nadzieję, że sobie poradzisz.
 Tak naprawdę, to wystarczy wklejać polecenia poniżej do konsoli.</p>
-<p>Po zainstalowaniu <cite>Hugo</cite>, tworzymy projekt za pomocą polecenia:
+<p>Po zainstalowaniu <cite><a href="#bibliografia">Hugo</a></cite>, tworzymy projekt za pomocą polecenia:
 <code>hugo new site [nazwa projektu]</code>. Strona internetowa jest w katalogu <code>content</code>, a wzorce
 w katalogu <code>layouts</code>.</p>
 <p>Stwórzmy przykładową stronę o ścieżce <code>/posts/fruits/blueberry</code>.
@@ -338,7 +344,7 @@ a w nim plik <code>/layouts/_default/single.html</code> o treści:</p>
 </span></span></code></pre></div><p>Teraz wpisujemy polecenie: <code>hugo serve</code>. Wchodzimy na stronę przeglądarki
 pod adres <code>localhost:1313/posts/fruits/blueberry</code>. Przeglądając źródło strony, zobaczymy
 zawartość identyczną do wzorca.</p>
-<h3 id="wypełnianie-wzorca-treścią">Wypełnianie wzorca treścią</h3>
+<h3 id="wypełnianie-wzorca">Wypełnianie wzorca</h3>
 <p>Na chwilę obecną wystarczy zrozumieć dwie rzeczy:</p>
 <ol>
 <li>W miejsce <code>{{ .Title }}</code> zostanie wpisany tytuł strony (atrybut w pliku <code>.md</code>).</li>
@@ -357,15 +363,20 @@ zawartość identyczną do wzorca.</p>
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#000080;font-weight:bold">html</span>&gt;
 </span></span></code></pre></div><p>Każda strona typu Single to będzie wzorzec wyżej wypełniony treścią z pliku <code>index.md</code>.</p>
 <h3 id="markdown">Markdown</h3>
-<p>Treść stron będziemy pisać w plikach <code>.md</code>, czyli markdown. Plik <code>index.md</code> zaczyna się
+<p>Treść stron będziemy pisać w plikach <code>.md</code>, czyli
+Plik <code>index.md</code> zaczyna się
 od listy atrybutów np. <code>title</code>, <code>date</code>, <code>draft</code>, które dowolnie można wykorzystać we wzorcu.
 Po atrybutach jest treść strony. Stronę piszemy tak jak zwykły plik tekstowy. Treść potem
 zostanie wypełniona w pole <code>{{ .Content }}</code> wzorca.</p>
-<p>Przy wklejaniu treści do wzorca, format markdown zostaje przekonwertowany na HTML.
+<p>Przy wklejaniu treści do wzorca, format
+<cite><a href="#bibliografia">Markdown</a></cite>
+zostaje przekonwertowany na
+<cite><a href="#bibliografia">HTML</a></cite>.
 Przykładowo każdy kawałek tekstu oddzielony o jedną pustą linię zostanie otoczony
 znacznikiem <code>&lt;p&gt;</code>. Linia <code>## Rozdział</code> zostanie zamieniona na znacznik <code>&lt;h2&gt;</code>. Warto
-poczytać w internecie jak pisać w formacie markdown. Większość z wyrażeń jest dosyć
-intuicyjna.</p>
+poczytać w internecie jak pisać w formacie
+<cite><a href="#bibliografia">Markdown</a></cite>.
+Większość z wyrażeń jest dosyć intuicyjna.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-md" data-lang="md"><span style="display:flex;"><span>+++
 </span></span><span style="display:flex;"><span>title = &#39;Pisanie stron internetowych&#39;
 </span></span><span style="display:flex;"><span>type = &#39;extended&#39;
@@ -377,7 +388,8 @@ intuicyjna.</p>
 </span></span><span style="display:flex;"><span>zamierzchłych. Przeważająca większość internautów korzysta z platform jak
 </span></span><span style="display:flex;"><span>...
 </span></span></code></pre></div><h3 id="shortcode">Shortcode</h3>
-<p>Nie wszystkie znaczniki HTML mają swoje odpowiedniki w markdown.
+<p>Nie wszystkie znaczniki HTML mają swoje odpowiedniki w
+<cite><a href="#bibliografia">Markdown</a></cite>.
 W tym wypadku korzystamy z <dfn>shortcode</dfn>.</p>
 <p>Dobrze jest sobie wyobrazić shortcode&rsquo;y jako mini-wzorce.
 Tworzymy katalog <code>layouts/shortcode</code>, a w nim plik
@@ -395,57 +407,40 @@ W pliku <code>.md</code> korzystam z shortcode&rsquo;u:</p>
 </span></span></code></pre></div><p>Shortcode nie musi mieć treści.
 Hugo udostępnia kilka domyślnych shortcode&rsquo;ów, np. <code>{{&lt; figure &gt;}}</code>,
 <code>{{&lt; youtube &gt;}}</code>. Aby wyświetlić znacznik <code>&lt;iframe&gt;</code> z wideo z platformy
-<cite>Youtube</cite> wpisujemy do markdown
+<cite><a href="#bibliografia">YouTube</a></cite> wpisujemy do
+<cite><a href="#bibliografia">Markdown</a></cite>
 <code>{{&lt; youtube [id] &gt;}}</code>.</p>
 <h3 id="wybieranie-wzorca">Wybieranie wzorca</h3>
 <p>Obecnie, każda strona typu Single wybierze wzorzec <code>layout/_default/single.html</code>.
 Przypuśćmy, że potrzebujemy nowy wzorzec. Nazwiemy go <code>extended</code>. Tworzymy katalog
 <code>layout/extended</code>, a w nim plik <code>/layout/extended/single.html</code>. Jeżeli w pliku
-<code>.md</code> dopiszemy atrybut <code>type = 'extended'</code>, to <cite>Hugo</cite> wybierze
+<code>.md</code> dopiszemy atrybut <code>type = 'extended'</code>, to <cite><a href="#bibliografia">Hugo</a></cite> wybierze
 wzorzec <code>layout/extended/single.html</code>. Zazwyczaj wybór wzorca zależy od poziomu
 specyficzności, ale w razie problemów warto prześledzić hierarchię w dokumentacji.</p>
 <p>Bardzo często też mi się zdarza, że mam źle wpisaną datę lub <code>draft = true</code>.
 Jeżeli serwer nie został uruchomiony z flagami poleceniem <code>hugo serve -DF</code>,
 to strona się nie wyświetli.</p>
 <h2 id="podsumowanie">Podsumowanie</h2>
-<p>Przyznam, że nie jest to najprzyjemniejszy temat do opisywania. Treść jest
-bardzo obszerna. Przeszedłem tylko najważniejsze rzeczy z każdych działów,
-całą resztę zostawiam czytelnikowi do przećwiczenia.</p>
 <p>Ten materiał wystarczy do napisania strony, nawet ładniejszej od mojej.
 Mam nadzieję, że jakkolwiek udało mi się przyciągnąć Twoją uwagę. Starałem
 się dokładnie opisać każdy rozdział. Będę szczęśliwy, jeżeli przekaz był
 jasny.</p>
-<figure><img src="/unix/hugo-single/bow.gif"
-    alt="yotsugi bow">
-</figure>
-
 <p>Na koniec chciałbym podziękować za przeczytanie tego posta. Jeżeli napiszesz
 własną stronę i masz do mnie kontakt, to daj znać. Zamierzam zgromadzić linki
 na stronie głównej.</p>
 <h3 id="bibliografia">Bibliografia</h3>
 <ol>
-<li><ruby>月山<rt>Tsukiyama</rt></ruby>
- <ruby>比呂<rt>Hiro</rt></ruby>
-
-z serialu Blood-C.</li>
-<li><ruby>神楽<rt>Kagura</rt></ruby>
- i <ruby>沖田<rt>Okita</rt></ruby>
-
-<ruby>総悟<rt>Sougo</rt></ruby>
- z serialu <ruby>銀魂<rt>Gintama</rt></ruby>
-.</li>
-<li><ruby>五更<rt>Gokou</rt></ruby>
- <ruby>瑠璃<rt>Ruri</rt></ruby>
- z serialu
-<ruby>俺妹<rt>OreImo</rt></ruby>
-.</li>
-<li>Drzewo struktury plików ze strony <code>teacherjohn.com</code>.</li>
-<li><ruby>斧乃木<rt>Ononoki</rt></ruby>
- <ruby>余接<rt>Yotsugi</rt></ruby>
-
-z serialu <ruby>物語<rt>Monogatari</rt></ruby>
-.</li>
+<li>Facebook to znak firmowy Meta.</li>
+<li>Twitter to znak firmowy X Corp.</li>
+<li>YouTube to znak firmowy Google.</li>
+<li>Firefox  to znak firmowy Mozilla Corp.</li>
+<li>HTML, CSS to znaki firmowe W3C.</li>
+<li>JS, JavaScript to znaki firmowe Oracle Corp.</li>
+<li>Hugo to znak firmowy Steve Francia.</li>
+<li>Markdown to język znaczników zaprojektowany przez Johna Grubera i Aarona Swartza.</li>
 </ol>
+<p>Znaki firmowe są użyte na podstawie <dfn>Nominative Fair Use</dfn>, tylko
+po to, żeby zidentyfikować produkt lub serwis.</p>
 
 </main>
 

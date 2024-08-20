@@ -2,22 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/media/</loc>
-    <lastmod>2024-08-19T20:25:40+02:00</lastmod>
-  </url><url>
     <loc>https://example.org/tools/</loc>
     <lastmod>2024-08-19T20:25:36+02:00</lastmod>
   </url><url>
     <loc>https://example.org/unix/</loc>
     <lastmod>2024-08-19T20:25:16+02:00</lastmod>
   </url><url>
-    <loc>https://example.org/media/final-fantasy/</loc>
-    <lastmod>2024-07-26T14:55:55+02:00</lastmod>
-  </url><url>
-    <loc>https://example.org/tools/buying-playstation-3/</loc>
+    <loc>https://example.org/tools/sony-playstation/</loc>
     <lastmod>2024-07-25T21:42:02+02:00</lastmod>
   </url><url>
-    <loc>https://example.org/unix/hugo-single/</loc>
+    <loc>https://example.org/unix/hugo-simple-webpage/</loc>
     <lastmod>2024-07-24T12:07:14+02:00</lastmod>
   </url><url>
     <loc>https://example.org/</loc>

@@ -77,6 +77,10 @@ samp {
     font-weight: bold;
 }
 
+cite a {
+    color: black;
+    text-decoration: underline dashed;
+}
 table {
     margin: 18px auto;
     text-align: center;
